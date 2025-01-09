@@ -22,7 +22,7 @@ This repository contains coursework, assignments, and notes for **Software Archi
 - **Course Title:** Software Architecture
 - **Course Code:** CSE-489
 - **Institution:** Chittagong University of Engineering and Technology (CUET)
-- **Instructor:** Md Monjur Ul Hasan | Assistant Professor | Dept. of CSE
+- **Instructor:** Md Monjur Ul Hasan | Assistant Professor | Dept. of CSE (CUET)
 
 ---
 
@@ -54,16 +54,53 @@ This section will be updated at the end of each cycle.
 >   - Code Quality
 > - Payment Gateway Architecture Design for an E-commerce website.
 
+> **Cycle 2: Introduction to Software Architecture**
+
+> **Cycle 3: **  
+> **Date:** 8 Jan 2025
+> **L03: Topics Covered:**
+>
+> - SundarBan Payment Gateway Architecture Design
+> - Executable File(Header + PC(Program Counter))
+> - 16 MB memory allocation
+> - Load Test
+> - Program (compile --> Linking --> building)
+> - File (read operation and write operation)
+> - Synchronous and Asynchronous Call
+> - Webhook
+> - Web browser Developer option (when you load a browser a webpage, at least hundreds of call invoked)
+> - Horizaontal scaling
+> - Round Robin Scheduling
+> - Even Driven Solution
+> - Microservice
+> - Even / message bus
+> - Event Brokers
+> - Stateless Application
+> - Kafka
+> - Rabit MQ
+> - Cloud agnostic Solution
+> - Elastic compute, EC2
+> - Network or Application load balancer
+> - database sharding
+> - CQRS
+> - Thread
+
 ## Assignments and Projects
 
 List of assignments and projects completed during the course.
 
-<!-- | Assignment/Project Title          | Description                             | Submission Date |
-|-----------------------------------|-----------------------------------------|-----------------|
-| Assignment 1: Case Study Analysis | Analyzed the architectural case study   | YYYY-MM-DD      |
-| Project 1: E-Commerce Architecture| Designed and implemented a payment gateway | YYYY-MM-DD      |
-
---- -->
+<table border = 1>
+  <tr>
+    <th>Assignment/Project Title</th>
+    <th>Description</th>
+    <th>Submission Date</th>
+  </tr>
+  <tr>
+    <td>Assignment 1: Sundarban payment gateway</td>
+    <td>What problems with this architecture (designed in the class) and why Amazon will buy your system.</td>
+    <td></td>
+  </tr>
+</table>
 
 ## Resources and References
 
