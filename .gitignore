@@ -1,0 +1,59 @@
+# Compiled source files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# C++
+*.obj
+*.exe
+*.out
+*.app
+
+# Rust
+target/
+
+# Go
+bin/
+pkg/
+
