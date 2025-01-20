@@ -35,3 +35,21 @@ exports.getUser = async (req, res) => {
     res.status(404).json({ message: error.message });
   }
 };
+
+exports.updateUser = async (req, res) => {
+  try {
+    const user = await User.findOne({ name: req.params.name });
+
+    if (!user) {
+      return res.status(404).json({ message: 'User Not Found!' });
+    } else {
+      // user.name = req.body.name;
+      user.email = req.body.email;
+
+      const updateUser = await user.save();
+      return res.json(updateUser);
+    }
+  } catch (error) {
+    return res.status(404).json({ message: error.message });
+  }
+};
