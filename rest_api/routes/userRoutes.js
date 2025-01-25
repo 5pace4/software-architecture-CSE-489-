@@ -12,4 +12,6 @@ router.put('/:name', userController.updateUser);
 
 router.delete('/:name', userController.deleteUser);
 
+router.patch('/:name', userController.updateUser2);
+
 module.exports = router;

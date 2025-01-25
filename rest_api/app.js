@@ -15,6 +15,12 @@ const userRoutes = require('./routes/userRoutes');
 //     message: 'Welcome to the API',
 //   });
 // });
+
+// Middleware for parsing JSON
+app.use(express.json());
+// Middleware for parsing URL-encoded data (if needed)
+app.use(express.urlencoded({ extended: true }));
+
 app.use(bodyParser.json());
 
 mongoose

@@ -70,3 +70,37 @@ exports.deleteUser = async (req, res) => {
     return res.status(404).json({ message: error.message });
   }
 };
+
+exports.updateUser2 = async (req, res) => {
+  const { name } = req.params.name;
+  const updates = req.body;
+
+  const allowedUpdates = ['name', 'email'];
+  const updateFields = Object.keys(updates).filter((field) =>
+    allowedUpdates.includes(field),
+  );
+
+  if (updateFields.length === 0) {
+    return res.status(400).send({ error: 'Invalid updates!' });
+  }
+  try {
+    //Find the user by name and update
+    const user = await User.findOneAndUpdate(
+      name,
+      { $set: updates },
+      { new: true, runValidators: true }, //return updated user and validate fields
+    );
+
+    if (!user) {
+      return res.status(404).json({ error: 'User not found!' });
+    }
+
+    res.status(200).json({
+      message: 'User Updated Successfully!',
+      updateFields: updates,
+      user,
+    });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
