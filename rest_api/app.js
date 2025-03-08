@@ -3,8 +3,10 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const userRoutes = require('./routes/userRoutes');
 
 // app.get('/', (req, res) => {
@@ -16,6 +18,7 @@ const userRoutes = require('./routes/userRoutes');
 //   });
 // });
 
+app.use(cors());
 // Middleware for parsing JSON
 app.use(express.json());
 // Middleware for parsing URL-encoded data (if needed)
